@@ -423,6 +423,7 @@ main {
         }
 
         p {
+            color: tomato;
             line-height: 2em;
             text-align: center;
         }
@@ -688,15 +689,6 @@ footer {
 
         }
     }
-
-    /* main {
-        .skills-section {
-            .skills-list-wrapper {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-    } */
 }
 
 @media (min-width: 700px) {
@@ -729,21 +721,6 @@ footer {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
             }
-
-            /* .skills-list-wrapper {
-                flex-direction: row;
-                flex-wrap: wrap;
-                gap: 2em;
-
-                li {
-                    width: auto;
-                    gap: .5em;
-
-                    &>* {
-                        width: auto;
-                    }
-                }
-            } */
         }
 
         .mission-section {
