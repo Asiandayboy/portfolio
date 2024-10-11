@@ -338,8 +338,6 @@ main {
                 justify-content: space-between;
                 align-items: start;
                 gap: 1em;
-                /* height: 150px; */
-                /* background-color: navy; */
 
                 backdrop-filter: blur(2px);
                 -webkit-backdrop-filter: blur(2px);
@@ -358,20 +356,7 @@ main {
                     font-size: .85rem;
                     line-height: 1.5em;
                 }
-
-                /* &:hover {
-                    .skill-blurb {
-                        display: block;
-                    }
-                }
-
-                .skill-blurb {
-                    display: none;
-                } */
             }
-
-
-
         }
     }
 
@@ -652,7 +637,6 @@ footer {
 }
 
 
-/* media query to disable collapsible navbar */
 @media (min-width: 550px) {
     nav {
         box-shadow: 0 3px 10px var(--soft-black);
@@ -746,7 +730,6 @@ footer {
     footer {
         .contact-section {
             max-width: 800px;
-            /* border: 1px solid tomato; */
 
             .contacts-wrapper {
                 display: flex;
@@ -808,7 +791,7 @@ footer {
     main {
         .skills-section {
             .skills-list-wrapper {
-                grid-template-columns: repeat(3, 1fr); /* made it 3 columns instead of 4 to avoid the dense and cluttered look */
+                grid-template-columns: repeat(3, 1fr);
             }
         }
     }
