@@ -73,8 +73,6 @@ body {
 }
 
 
-
-
 ul {
     list-style: none;
     padding: 0;
@@ -98,7 +96,7 @@ nav {
     justify-content: center;
 
 
-    .navbar-wrapper {
+    & .navbar-wrapper {
         display: none;
         flex-direction: column;
         gap: 2.5em;
@@ -106,15 +104,15 @@ nav {
         margin: 0;
         padding: 1em 3.5em;
         padding-bottom: 5em;
-        font-size: 1.1rem;
+        font-size: 1rem;
 
         box-shadow: 0 10px 10px rgb(25, 25, 25);
 
-        div, li {
+        & div, li {
             width: fit-content;
         }
 
-        .nav-group {
+        & .nav-group {
             display: flex;
             flex-direction: column;
             gap: 2.5em;
@@ -160,7 +158,7 @@ nav {
 main {
     margin-top: var(--margin-from-navbar);
 
-    .hero-section {
+    & .hero-section {
         width: 100%;
         padding: 1em;
         height: calc(100vh - var(--margin-from-navbar) - .1em);
@@ -171,7 +169,7 @@ main {
         align-items: center;
 
 
-        .hero-img {
+        & .hero-img {
             margin-top: -1em;
             margin-bottom: 20vh;
             background-color: var(--accent-color-1);
@@ -200,7 +198,7 @@ main {
             }
         }
 
-        h1 {
+        & h1 {
             height: fit-content;
             margin: 0;
             margin-bottom: 2em;
@@ -210,11 +208,11 @@ main {
             text-align: center;
         }
 
-        #hero-hello {
-            color: var(--accent-color-1) !important;
+        & #hero-hello {
+            color: var(--accent-color-1);
         }
 
-        #my-name {
+        & #my-name {
             display: inline-block;
             margin: .1em 0 .25em 0;
             font-size: clamp(3rem, 10vw, 4rem);
@@ -222,7 +220,7 @@ main {
             text-align: center;
         }
 
-        #hero-tagline {
+        & #hero-tagline {
             margin: 0 0 3em 0;
             font-style: italic;
             font-weight: normal;
@@ -232,13 +230,13 @@ main {
             text-align: center;
         }
 
-        .hero-links {
+        & .hero-links {
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 1em;
 
-            a {
+            & a {
                 font-size: 1.1rem;
                 color: var(--soft-white-2);
             }
@@ -248,27 +246,27 @@ main {
 
     }
 
-    .projects-section {
-        .projects-wrapper {
+    & .projects-section {
+        & .projects-wrapper {
             display: flex;
             flex-direction: column;
             gap: 2em;
 
 
-            .project {
+            & .project {
 
-                h3 {
+                & h3 {
                     color: var(--white-2);
                     text-align: center;
                 }
 
-                .prj-visual {
+                & .prj-visual {
                     aspect-ratio: 21/13;
                     width: 100%;
                     height: auto;
                     border-radius: 7px;
 
-                    img {
+                    & img {
                         border-radius: inherit;
                         aspect-ratio: 21/13;
                         width: 100%;
@@ -279,25 +277,25 @@ main {
                     }
                 }
 
-                ul {
+                & ul {
                     span {
                         color: var(--soft-white-3);
                         font-weight: bold;
                         font-style: italic;
                     }
 
-                    li:nth-child(2) {
+                    & li:nth-child(2) {
                         display: flex;
                         gap: .25em;
                     }
 
-                    a {
+                    & a {
                         display: block;
                         width: max-content;
                     }
                 }
 
-                .source-code-link {
+                & .source-code-link {
                     transition: 100ms color;
 
                     &:hover {
@@ -317,21 +315,21 @@ main {
         }
     }
 
-    .skills-section {
-        .skills-list-wrapper {
+    & .skills-section {
+        & .skills-list-wrapper {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: start;
             gap: 1em 2em;
 
-            svg {
+            & svg {
                 --size: 75px;
                 width: var(--size);
                 height: var(--size);
             }
 
-            li {
+            & li {
                 width: 100%;
 
                 display: flex;
@@ -347,11 +345,11 @@ main {
                 padding: 1em;
                 border-radius: 7px;
 
-                svg, i {
+                & svg, & i {
                     width: 25%;
                 }
 
-                .skill-blurb {
+                & .skill-blurb {
                     width: 75%;
                     font-size: .85rem;
                     line-height: 1.5em;
@@ -360,16 +358,16 @@ main {
         }
     }
 
-    .about_me-section {
-        p {
+    & .about_me-section {
+        & p {
             line-height: 2em;
         }
 
-        #p1 {
+        & #p1 {
             margin-top: 0;
         }
 
-        #resume-button {
+        & #resume-button {
             border: 2px solid var(--soft-grey);
             margin: 0 auto;
             margin-top: 2em;
@@ -390,13 +388,12 @@ main {
             &:hover {
                 border-color: var(--accent-color-4);
                 color: var(--accent-color-4);
-                transform: translateY(-5px);
             }
         }
     }
 
-    .mission-section {
-        .mission-img-wrapper {
+    & .mission-section {
+        & .mission-img-wrapper {
             aspect-ratio: 21/13;
             width: 100%;
             height: auto;
@@ -407,7 +404,7 @@ main {
             background-size: 100%;
         }
 
-        p {
+        & p {
             line-height: 2em;
             text-align: center;
         }
@@ -417,11 +414,11 @@ main {
 footer {
     text-align: center;
 
-    .contact-section {
+    & .contact-section {
         --icon-size: 30px;
         margin-bottom: 5em;
 
-        .contact-item {
+        & .contact-item {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -430,21 +427,21 @@ footer {
             gap: 1em;
             width: fit-content;
             
-            .contact a {
+            & .contact a {
                 transition: 150ms ease all;
                 
                 color: var(--soft-white-2);
             }
         }
 
-        .github-contact {
+        & .github-contact {
             --hover-color: var(--accent-color-1);
-            .github-icon-svg {
+            & .github-icon-svg {
                 display: flex;
                 width: var(--icon-size);
                 height: var(--icon-size);
     
-                .github-icon {
+                & .github-icon {
                     fill: var(--soft-white-2);
                 }
     
@@ -459,14 +456,14 @@ footer {
             }
         }
     
-        .email-contact {
+        & .email-contact {
             --hover-color: var(--accent-color-4);
-            .email-icon-svg {
+            & .email-icon-svg {
                 display: flex;
                 width: var(--icon-size);
                 height: var(--icon-size);
     
-                .email-icon {
+                & .email-icon {
                     stroke: var(--soft-white-2);
                     stroke-width: 1.25;
                 }
@@ -481,14 +478,14 @@ footer {
             }
         }
 
-        .linkedin-contact {
+        & .linkedin-contact {
             --hover-color: var(--accent-color-1);
-            .linkedin-icon-svg {
+            & .linkedin-icon-svg {
                 display: flex;
                 width: var(--icon-size);
                 height: var(--icon-size);
     
-                .linkedin-icon {
+                & .linkedin-icon {
                     fill: var(--soft-white-2);
                 }
             }
@@ -573,55 +570,55 @@ footer {
 }
 
 .html-icon-svg {
-    .html-icon {
+    & .html-icon {
         fill: tomato;
     }
 }
 
 .css-icon-svg {
-    .css-icon {
+    & .css-icon {
         fill: var(--css-color);
     }
 }
 
 .react-icon-svg {
-    .react-icon {
+    & .react-icon {
         fill: var(--react-color);
     }
 }
 
 .golang-icon-svg {
-    .golang-icon {
+    & .golang-icon {
         fill: var(--golang-color);
     }
 }
 
 .js-icon-svg {
-    .js-icon {
+    & .js-icon {
         fill: var(--js-color);
     }
 }
 
 .ts-icon-svg {
-    .ts-icon {
+    & .ts-icon {
         fill: var(--ts-color);
     }
 }
 
 .mongodb-icon-svg {
-    .mongodb-icon {
+    & .mongodb-icon {
         fill: var(--mongodb-color);
     }
 }
 
 .mysql-icon-svg {
-    .mysql-icon {
+    & .mysql-icon {
         fill: var(--mysql-color);
     }
 }
 
 .git-icon-svg {
-    .git-icon {
+    & .git-icon {
         fill: var(--git-color);
     }
 }
@@ -641,11 +638,11 @@ footer {
     nav {
         box-shadow: 0 3px 10px var(--soft-black);
 
-        svg {
+        & svg {
             display: none;
         }
 
-        .navbar-wrapper { 
+        & .navbar-wrapper { 
             --side-padding: 2em;
             width: min(100%, calc(1200px + var(--side-padding)) );
             margin: 0 auto;
@@ -660,12 +657,12 @@ footer {
             font-size: 1rem;
 
 
-            .nav-group {
+            & .nav-group {
                 flex-direction: row;
                 gap: 1.5em;
             }
 
-            .nav-home {
+            & .nav-home {
                 position: absolute;
                 left: var(--side-padding);
             }
@@ -676,18 +673,18 @@ footer {
 
 @media (min-width: 700px) {
     main {
-        .projects-section {
-            .projects-wrapper {
+        & .projects-section {
+            & .projects-wrapper {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 align-items: end;
                 
-                .project {
-                    .h3 {
+                & .project {
+                    & .h3 {
                         margin-top: 0;
                     }
 
-                    ul {
+                    & ul {
                         height: 80px;
                         margin-bottom: 0;
                     }
@@ -695,31 +692,31 @@ footer {
             }
         }
 
-        .about_me-section {
+        & .about_me-section {
             max-width: 800px;
         }
 
-        .skills-section {
-            .skills-list-wrapper {
+        & .skills-section {
+            & .skills-list-wrapper {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
             }
         }
 
-        .mission-section {
+        & .mission-section {
             max-width: 800px;
-            div {
+            & div {
                 width: 100%;
                 display: flex;
                 align-items: center;
                 gap: 2em;
 
-                .mission-img-wrapper {
+                & .mission-img-wrapper {
                     aspect-ratio: 21/13;
                     width: 50%;
                 }
 
-                p {
+                & p {
                     margin: 0;
                     width: 50%;
                 }
@@ -728,16 +725,16 @@ footer {
     }
 
     footer {
-        .contact-section {
+        & .contact-section {
             max-width: 800px;
 
-            .contacts-wrapper {
+            & .contacts-wrapper {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 gap: 1em;
 
-                .contact-item {
+                & .contact-item {
                     flex-direction: column;
                     text-align: center;
                     align-items: center;
@@ -750,12 +747,12 @@ footer {
                     padding: 1em;
                     transition: 150ms ease border-color, 150ms ease transform;
 
-                    .contact {
+                    & .contact {
                         word-break: break-all;
                         height: 2rem;
                     }
 
-                    svg {
+                    & svg {
                         margin: 0;
                     }
 
@@ -771,15 +768,15 @@ footer {
 
 @media (min-width: 900px) {
     main {
-        .projects-section {
-            .projects-wrapper {
+        & .projects-section {
+            & .projects-wrapper {
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
                 align-items: end;
                 flex-wrap: wrap;
 
-                .project {
+                & .project {
                     width: 365px;
                 }
             }
@@ -789,8 +786,8 @@ footer {
 
 @media (min-width: 1200px) {
     main {
-        .skills-section {
-            .skills-list-wrapper {
+        & .skills-section {
+            & .skills-list-wrapper {
                 grid-template-columns: repeat(3, 1fr);
             }
         }
