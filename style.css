@@ -172,18 +172,18 @@ main {
 
 
         .hero-img {
-            margin-bottom: 10rem;
+            margin-top: -1em;
+            margin-bottom: 20vh;
             background-color: var(--accent-color-1);
 
-            width: clamp(125px, 20vw, 140px);
-            height: clamp(125px, 20vw, 140px);
-            aspect-ratio: 1;
+            width: clamp(100px, 20vw, 140px);
+            height: clamp(100px, 20vw, 140px);
             border-radius: 50%;
 
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: clamp(5rem, 13vw, 6rem);
+            font-size: clamp(4rem, 13vw, 6rem);
             color: var(--soft-black);
             position: relative;
 
@@ -191,8 +191,8 @@ main {
                 --offset: 25px;
                 content: "";
                 display: block;
-                width: calc(clamp(125px, 20vw, 140px) + var(--offset));
-                height: calc(clamp(125px, 20vw, 140px) + var(--offset));
+                width: calc(clamp(100px, 20vw, 140px) + var(--offset));
+                height: calc(clamp(100px, 20vw, 140px) + var(--offset));
                 position: absolute;
                 background-color: transparent;
                 border-radius: 50%;
@@ -272,6 +272,7 @@ main {
                         border-radius: inherit;
                         aspect-ratio: 21/13;
                         width: 100%;
+                        height: auto;
                         object-position: 0px 0px;
                         object-fit: cover;
                         display: block;
@@ -411,8 +412,9 @@ main {
 
     .mission-section {
         .mission-img-wrapper {
-            width: 100%;
             aspect-ratio: 21/13;
+            width: 100%;
+            height: auto;
             border-radius: 7px;
             overflow: hidden;
             background-image: linear-gradient(to right, rgba(0, 204, 255, 0), rgba(255, 166, 0, 0.312)), url("https://media.licdn.com/dms/image/D5612AQGjHbYRE5RPzQ/article-cover_image-shrink_720_1280/0/1699889379278?e=2147483647&v=beta&t=qjPIaO9ag_UskFOZIZcD4mXCGc9CF1LWBXiMlEfgeaA");
