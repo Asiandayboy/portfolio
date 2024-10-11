@@ -343,7 +343,7 @@ main {
                 backdrop-filter: blur(2px);
                 -webkit-backdrop-filter: blur(2px);
 
-                border: 1px solid var(--soft-grey);
+                border: 2px solid var(--soft-grey);
                 box-shadow: 0 0 10px rgb(25, 25, 25);
                 padding: 1em;
                 border-radius: 7px;
