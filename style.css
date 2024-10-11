@@ -156,7 +156,7 @@ nav {
     }
 }
 
-
+/* 
 main {
     margin-top: var(--margin-from-navbar);
 
@@ -637,7 +637,7 @@ footer {
 }
 
 
-/* @media (min-width: 550px) {
+@media (min-width: 550px) {
     nav {
         box-shadow: 0 3px 10px var(--soft-black);
 
