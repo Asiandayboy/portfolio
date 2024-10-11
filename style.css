@@ -156,7 +156,7 @@ nav {
     }
 }
 
-/* 
+
 main {
     margin-top: var(--margin-from-navbar);
 
@@ -211,7 +211,7 @@ main {
         }
 
         #hero-hello {
-            color: var(--accent-color-1);
+            color: var(--accent-color-1) !important;
         }
 
         #my-name {
@@ -796,4 +796,4 @@ footer {
         }
     }
 }
- */
+
