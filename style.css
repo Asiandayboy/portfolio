@@ -278,7 +278,7 @@ main {
                 }
 
                 & ul {
-                    span {
+                    & span {
                         color: var(--soft-white-3);
                         font-weight: bold;
                         font-style: italic;
@@ -305,11 +305,11 @@ main {
                 }
             }
 
-            .prj-1 .prj-visual img {
+            & .prj-1 .prj-visual img {
                 object-position: center;
             }
 
-            .prj-4 a {
+            & .prj-4 a {
                 pointer-events: none;
             }
         }
