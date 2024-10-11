@@ -62,9 +62,14 @@ body {
         border-radius: 3px;
     }
 
-    /* background-image: linear-gradient(to bottom, rgba(30, 30, 30, 0.5), rgba(30, 30, 30, 0.93)), 
-    url("assets/pattern-bg.webp"); */
-    /* background-position: center; */
+
+
+    background-image: linear-gradient(to bottom, 
+        rgba(30, 30, 30, .8) 0%, 
+        rgba(30, 30, 30, .8) 100%
+    ), 
+    url("assets/topography.svg");
+    background-attachment: fixed;
 }
 
 
@@ -164,11 +169,11 @@ main {
         align-items: center;
 
         
-        background-image: linear-gradient(to bottom, 
-            rgba(30, 30, 30, .8) 0%, 
+        /* background-image: linear-gradient(to bottom, 
+            rgba(30, 30, 30, .8) 25%, 
             rgba(30, 30, 30, 1) 100%
         ), 
-        url("assets/topography.svg");
+        url("assets/topography.svg"); */
 
 
         .hero-img {
@@ -255,7 +260,9 @@ main {
             flex-direction: column;
             gap: 2em;
 
+
             .project {
+
                 h3 {
                     color: var(--white-2);
                     text-align: center;
@@ -308,6 +315,10 @@ main {
             .prj-1 .prj-visual img {
                 object-position: center;
             }
+
+            .prj-4 a {
+                pointer-events: none;
+            }
         }
     }
 
@@ -335,7 +346,11 @@ main {
                 /* height: 150px; */
                 /* background-color: navy; */
 
-                border: 2px solid var(--soft-grey);
+                backdrop-filter: blur(2px);
+                -webkit-backdrop-filter: blur(2px);
+
+                border: 1px solid var(--soft-grey);
+                box-shadow: 0 0 10px rgb(25, 25, 25);
                 padding: 1em;
                 border-radius: 7px;
 
