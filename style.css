@@ -101,12 +101,14 @@ nav {
     .navbar-wrapper {
         display: none;
         flex-direction: column;
-        gap: 1em;
+        gap: 2.5em;
         
         margin: 0;
         padding: 1em 3.5em;
-        padding-bottom: 2em;
+        padding-bottom: 5em;
         font-size: 1.1rem;
+
+        box-shadow: 0 10px 10px rgb(25, 25, 25);
 
         div, li {
             width: fit-content;
@@ -115,7 +117,7 @@ nav {
         .nav-group {
             display: flex;
             flex-direction: column;
-            gap: .75em;
+            gap: 2.5em;
         }
     }
 
@@ -168,16 +170,8 @@ main {
         justify-content: center;
         align-items: center;
 
-        
-        /* background-image: linear-gradient(to bottom, 
-            rgba(30, 30, 30, .8) 25%, 
-            rgba(30, 30, 30, 1) 100%
-        ), 
-        url("assets/topography.svg"); */
-
 
         .hero-img {
-            margin-top: -10rem;
             margin-bottom: 10rem;
             background-color: var(--accent-color-1);
 
@@ -676,6 +670,7 @@ footer {
             justify-content: center;
             align-items: center;
             padding: 1.5em var(--side-padding);
+            box-shadow: none;
             font-size: 1rem;
 
 
