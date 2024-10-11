@@ -645,6 +645,7 @@ footer {
         & .navbar-wrapper { 
             --side-padding: 2em;
             width: min(100%, calc(1200px + var(--side-padding)) );
+            height: auto;
             margin: 0 auto;
 
             position: relative;
