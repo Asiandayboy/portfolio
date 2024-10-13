@@ -13,6 +13,8 @@
     --white-1: rgb(240, 240, 240);
     --white-2: rgb(230, 230, 230);
 
+    --bg-img-color: rgba(30, 30, 30, .8);
+
     /* --accent-color: rgb(107, 148, 202); */
     /* --accent-color-1: rgb(81, 153, 246); */
     --accent-color: rgb(198, 167, 101);
@@ -39,8 +41,14 @@
     box-sizing: border-box;
 }
 
+.light-theme {
+    --soft-black: rgb(240, 240, 240);
+    --bg-img-color: rgba(240, 240, 240, 0.9);
+}
+
 
 body {
+    overflow-x: hidden;
     margin: 0;
     
     background-color: var(--soft-black);
@@ -65,8 +73,8 @@ body {
 
 
     background-image: linear-gradient(to bottom, 
-        rgba(30, 30, 30, .8) 0%, 
-        rgba(30, 30, 30, .8) 100%
+        var(--bg-img-color) 0%, 
+        var(--bg-img-color) 100%
     ), 
     url("assets/topography.svg");
     background-attachment: fixed;
@@ -169,7 +177,7 @@ main {
         align-items: center;
 
 
-        & .hero-img {
+        /* & .hero-img {
             margin-top: -1em;
             margin-bottom: 20vh;
             background-color: var(--accent-color-1);
@@ -196,13 +204,13 @@ main {
                 border-radius: 50%;
                 border: 3px solid var(--accent-color-1);
             }
-        }
+        } */
 
         & h1 {
             height: fit-content;
             margin: 0;
             margin-bottom: 2em;
-            margin-top: -4em;
+            margin-top: -3em;
             font-size: clamp(1.5rem, 5vw, 1.75rem);
             margin-bottom: 0;
             text-align: center;
@@ -257,6 +265,7 @@ main {
 
                 & h3 {
                     color: var(--white-2);
+                    font-size: 1.25rem;
                     text-align: center;
                 }
 
@@ -282,6 +291,26 @@ main {
                         color: var(--soft-white-3);
                         font-weight: bold;
                         font-style: italic;
+                    }
+
+                    & .tech-stack {
+                        display: flex;
+                        flex-wrap: wrap;
+                        margin-bottom: .25em;
+                        gap: .25em;
+
+                        & div {
+                            border: 2px solid var(--soft-grey);
+                            backdrop-filter: blur(1px);
+                            border-radius: 5px;
+                            padding: .5em;
+
+
+                            text-transform: uppercase;
+                            font-weight: bold;
+                            font-size: .7rem;
+                            color: var(--soft-white-2);
+                        }
                     }
 
                     & li:nth-child(2) {
