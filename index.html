@@ -533,7 +533,7 @@
                     <div class="contact"><a href="https://github.com/Asiandayboy">github.com/Asiandayboy</a></div>
                 </div>
 
-                <div class="contact-item email-contact">
+                <div onclick=showEmailForm(this) class="contact-item email-contact">
                     <svg 
                         class="email-icon-svg"
                         xmlns="http://www.w3.org/2000/svg"  
@@ -556,7 +556,7 @@
                             stroke-width="2" 
                             stroke-linecap="round"/>
                     </svg>
-                    <div class="contact"><a href="">russellcheeseday@gmail.com</a></div>
+                    <div class="contact"><a onclick="event.preventDefault()" href="#">russellcheeseday@gmail.com</a></div>
                 </div>
 
                 <div class="contact-item linkedin-contact">
@@ -571,6 +571,26 @@
                     <div class="contact"><a href="https://www.linkedin.com/in/phakday-russell/">linkedin.com/in/phakday-russell/</a></div>
                 </div>
             </div>
+            <div class="email-form-wrapper">
+                <div>
+                    <form method="POST" action="" id="email-contact-form">
+                        <h3>Get in Touch</h3>
+                        <div>
+                            <label for="fullname">Name</label>
+                            <input type="text" name="fullname" id="fullname" placeholder="Your Name" required>
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div>
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <input type="submit" name="submit" id="submit">
+                    </form>
+                </div>
+            </div>
         </section>
         
         <div id="copyright">
@@ -578,5 +598,17 @@
         </div>
     </footer>
     <script src="index.js"></script>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "r5fea59PHV8DqsxRs",
+            });
+        })();
+    </script>
+
 </body>
 </html>

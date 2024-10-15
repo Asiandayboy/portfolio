@@ -6,7 +6,7 @@
     --soft-grey: rgb(45, 45, 45);
     --soft-grey-1: rgb(60, 60, 60);
     --soft-white-0: rgb(200, 200, 200);
-    --soft-white-1: rgb(180, 180, 180);
+    --soft-white-1: rgb(185, 185, 185);
     --soft-white-2: rgb(150, 150, 150);
     --soft-white-3: rgb(100, 100, 100);
     --white-0: rgb(255, 255, 255);
@@ -52,7 +52,7 @@ body {
     margin: 0;
     
     background-color: var(--soft-black);
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     color: var(--soft-white-1);
 
 
@@ -455,7 +455,7 @@ footer {
             margin: 1em auto;
             gap: 1em;
             width: fit-content;
-            
+
             & .contact a {
                 transition: 150ms ease all;
                 
@@ -527,6 +527,102 @@ footer {
                 color: var(--accent-color-1);
             }
 
+        }
+    }
+
+    & .email-form-wrapper {
+        display: grid;
+        grid-template-rows: 0fr;
+        transition: 300ms ease-in-out;
+        padding-top: calc(2em + var(--margin-from-navbar));
+        border-radius: 15px;
+
+
+        & > div {
+            border-radius: inherit;
+            overflow: hidden;
+            box-shadow: 0 0px 40px rgb(15, 15, 15);
+        }
+    }
+
+    & .show-email-form {
+        grid-template-rows: 1fr;
+    }
+
+    & #email-contact-form {
+        background-color: var(--soft-black);
+        padding: 2em clamp(1em, 3vw, 2em);
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+
+        & h3 {
+            margin: 0;
+            color: var(--soft-white-0);
+            font-size: 1.5rem;
+            color: var(--accent-color-4);
+        }
+
+        & > div {
+            display: flex;
+            flex-direction: column;
+            gap: .5em;
+            align-items: start;
+        }
+
+        & label {
+            text-transform: uppercase;
+            font-size: .75rem;
+            color: var(--soft-white-2);
+
+            &::after {
+                content: " *";
+                color: tomato;
+            }
+        }
+
+        & input, textarea {
+            width: 100%;
+            padding: .5em .75em;
+            border-radius: 5px;
+            border: none;
+            font-family: inherit;
+            font-size: 1rem;
+
+            color: var(--soft-white-0);
+            background-color: rgb(20, 20, 20);
+            backdrop-filter: blur(4px);
+
+            position: relative;
+            
+            &:focus {
+                outline: 2px solid var(--accent-color-4);
+            }
+        }
+
+        & input::placeholder, textarea::placeholder {
+            color: var(--soft-white-3);
+        }
+
+        & textarea {
+            resize: vertical;
+            height: 8rem;
+        }
+
+        & input[type="submit"] {
+            width: fit-content;
+            align-self: center;
+            padding: .5em 2em;
+            cursor: pointer;
+            transition: background-color 150ms ease, color 150ms ease, scale 150ms ease;
+            background-color: transparent;
+            border: 2px solid var(--accent-color-4);
+            color: var(--accent-color-4);
+
+            &:hover {
+                background-color: var(--accent-color-4);
+                color: var(--white-2);
+            }
         }
     }
 
