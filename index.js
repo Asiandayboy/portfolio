@@ -37,7 +37,8 @@ emailForm.addEventListener("submit", (e) => {
 
     emailjs.sendForm("service_nwlmgcd", "template_2vy37ok", emailForm).then(
         (response) => {
-            alert("Email successfully sent.")
+            alert("Email has been successfully sent.")
+            emailForm.reset()
         }, 
         (error) => {
             alert("Failed to send email message. Try again. If this problem persists, please send your message through your email client instead.")
