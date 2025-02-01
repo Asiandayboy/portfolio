@@ -313,14 +313,16 @@ main {
                         }
                     }
 
-                    & li:nth-child(2) {
-                        display: flex;
-                        gap: .25em;
-                    }
 
                     & a {
                         display: block;
                         width: max-content;
+                    }
+
+                    & li {
+                        margin-bottom: .5em;
+                        display: flex;
+                        gap: .25em;
                     }
                 }
 
@@ -691,7 +693,10 @@ footer {
         -webkit-text-stroke-width: .3px;
         background-position: -50% center;
     }   
+}
 
+.live-demo {
+    --accent-color-1: var(--accent-color-4);
 }
 
 .html-icon-svg {
